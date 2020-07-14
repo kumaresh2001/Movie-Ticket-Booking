@@ -1,0 +1,326 @@
+
+body
+{
+    width:1503px;
+    height:700px;
+    background-color:#111;
+}
+.pic
+{
+    margin-top:10px;
+    width: 1503px;
+    height:100%;
+}
+.top
+{
+    margin:-8px;
+    height:65px;
+    width:1519px;;
+    background-color: #111;
+}
+.title
+{
+
+    border-radius:15px;
+    width:1503px;
+    height:50px;
+    float:left;
+}
+.kumar{
+    width:500px;
+    height:40px;
+    margin-left:600px;
+    color:white;
+    font-size:30px;
+    padding-top:10px;
+    float:left;
+    margin-right:150px;
+}
+.titleopt
+{
+
+    width:75px;
+    height:35px;
+    color:white;
+    float:left;
+    font-size:20px;
+    margin:10px;
+    padding-left:15px;
+    padding-top:10px;
+    border-radius:20px;
+    background-color: #333;
+   margin-left:20px;
+
+}
+.titleopt:hover{
+    background-color:#111;
+}
+.search input{
+    
+    width:650px;
+    height:20px;
+    border-radius:15px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 8px;
+    margin-left:-8px;
+    width:1519px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+      color:white;
+      font-weight:bold;
+      height:30px;
+      width:75px;
+      font-size:24px;
+      float: left;
+      padding:20px;
+  }
+  li:hover {
+    background-color: #111;
+    color:white;
+  }
+input{
+    height:25px;
+    width:281px;
+    margin-left:850px;
+    margin-top:15px;
+    border-radius:20px;
+}
+.subtitle
+{
+    margin-left:5px;
+    color:black;
+    background-color:white;
+    padding-left:42.75%;
+    width: 850px;
+    height:35px;
+    font-size:20px;
+    font-weight:bold;
+    padding-top:10px;
+    border-radius:inherit;
+}
+.conatiner
+{
+    margin:-8px;
+    width:1511px;
+    height:800px;
+    background-color:#666;
+}
+.change
+{
+    float:left;
+}
+.before{
+    margin-top:300px;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    margin-left:90px;
+    opacity:0.9;
+    background-color:black;
+    color:white;
+}
+
+.slide
+{
+    height:650px;
+    width:1300px;
+    margin-left:-50px;
+    margin-right:-50px;
+}
+
+.invisible
+{
+    display:none;
+}
+
+.after{
+    margin-top:300px;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    opacity:0.9;
+    background-color: black;
+    color:white;
+}
+.box
+{
+    
+    margin-left:80px;
+    float:left;
+}
+.box div{
+
+
+    width:max-content;
+}
+.box div img
+{
+    height:500px;
+    width:400px;
+    margin:20px;
+}
+
+.poster
+{
+    margin-top:50px;
+    height:550px;
+    width:450px;
+    float:left;
+
+}
+.moviepic{
+    display:block;
+}
+.moviename
+{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:auto;
+    text-align:center;
+    width:100%;
+    display:block;
+}
+a:link{
+    text-decoration: none;
+}
+.rights{
+    width:1471px;
+    color:white;
+    font-size:15px;
+    margin-top:50px;
+    float:left;
+    padding-left:40px;
+    border-top: 2px solid white;
+    height:30px;
+}
+.secondposter{
+    width:30%;
+    align-content: center;
+    margin:auto;
+}
+.secondimage
+{
+    margin:auto;
+    align-self:center;
+    height:550px;
+    width:450px;
+}
+.secondmoviename{
+    text-align:center;
+    width:100%;
+    font-size:40px;
+    color:white;
+    text-transform: uppercase;
+}
+
+.entry
+{
+    color:white;
+    margin-left:300px;
+    font-size:25px;
+    border:10px solid white;
+    width:800px;
+    padding:30px;
+}
+.declare{
+    margin-left:200px;
+    color:white;
+    font-weight:bold;
+    font-size: 40px;;
+}
+.secondinput{
+    margin-left:0px;
+    width:300px;
+    border-radius:0px;
+    height:20px;
+}
+.secondradio{
+    width:20px;
+    height:20px;
+    margin-left:0px;
+}
+.secondsubmit{
+    margin-left:100px;
+    width:150px;
+    height:40px;
+    font-size:30px;
+    color:black;
+    border-radius:20px;
+    margin-top:30px;
+}
+form{
+    color:white;
+    margin-top:20px;
+    margin-left:200px;
+}
+.incorrect{
+    font-size:20px;
+    text-transform: capitalize;
+    color:red;
+}
+.error{
+    width:50px;
+    height:25px;
+    font-size:20px;
+    float:right;
+}
+.navlink:visited{
+    color:white;
+    
+}
+.secondconfirm{
+    height:50px;
+    font-size:30px;
+    width:100%;
+    text-align:center;
+    margin:auto;
+    color:white;
+    padding-top:15px;
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+    margin-bottom:30px;
+}
+.confirmation{
+    margin-top:40px;
+    margin-left:0px;
+    padding-top:20px;
+    padding-left:500px;
+    height:300px;
+    width:991px;
+    color:white;
+    font-size:35px;
+    border:10px solid white;
+}
+
+.details{
+    font-size:30px;
+    color:white;
+    font-weight:bold;
+    margin-left:auto;
+    width:54%;
+    margin-top:20px;
+
+}
+.result{
+    margin-left:-8px;
+    background-color:#333;
+    font-size:30px;
+    color:white;
+    height:50px;
+    width:1518px;
+    margin-bottom:15px;
+
+}
+.resultin{
+    float:right;
+    color:white;
+    margin-right:100px;
+}
