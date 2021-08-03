@@ -1,96 +1,308 @@
+    /* elements in header.php file */
+            html,body {
+                height:100%;
+            }
+    
+            body
+            {
+                margin:0px;
+                padding:0px;
+                background-color:#111;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
 
-body
-{
-    width:1503px;
-    height:700px;
-    background-color:#111;
+
+        /* to hide browser scrollbar */
+            body::-webkit-scrollbar{
+                display:none; /* Chrome, Safari and Opera*/
+            }
+
+            body{
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+            }
+
+
+        /* to change default color of link */
+            a:active,a:visited,a:link{
+                color:white;
+                text-decoration: none;
+            }
+
+
+        /* the heading where name of application is present */
+            .top
+            {
+                width:100%;
+                background-color: #111;
+                padding-top:5px;
+                padding-bottom: 0px;
+                text-align: center;
+                font-size: 35px;
+                color:white;
+                margin-bottom:10px;
+                float:left;
+            }
+
+            /* options icon hidden in desktop resolution */ 
+            #options-icon{
+                display:none;
+            }
+
+        /* the navbar where home,about,contact links are present */
+            .navbar{
+                width:100%;
+                margin-bottom:5px;
+                position:sticky;
+                z-index:10;
+                top:0px;
+                background-color: #333;
+                overflow:hidden;
+            }
+
+            .navbaritem,.titleopt{
+                font-weight:bold;
+                font-size: 25px;
+                float:left;
+                text-align: center;
+                color:white;
+                padding: 15px;
+            }
+
+            .navbaritem:hover,.titleopt:hover{
+                background-color:#111;
+                cursor: pointer;
+                transition-duration: 0.5s;
+            }
+
+
+            /* to hide navbar present in phone view */
+            #navbar-phone{
+                display:none;
+            }
+
+
+        /* Login/Register button or SignOut Button */
+            .titleopt
+            {
+                float:right;    
+                margin-right:20px;
+            }
+
+
+        /* Dialog box background when sign in button is clicked */
+            #registerbox{
+                height:100vh;
+                width:100vw;
+                display:none;
+                background-color:rgba(200,200,200,0.4);
+                margin:0px,0px,0px,0px;
+                position:fixed;
+                opacity:1;
+                top:0px;
+                z-index:1;
+            }
+
+
+        /* Dialog box with forms */
+            #boxform{
+                width:80%;
+                margin-left:10%;
+                background-color:black;
+                color:white;
+                opacity:100%;
+                z-index:10;
+                font-size:20px;
+                border-radius:15px;
+                border:solid white 5px;
+                padding:25px;
+                padding-bottom:30px;
+                text-align: center;
+                box-sizing: border-box;
+
+                -ms-transform: translateY(50%);
+                transform: translateY(50%);
+                
+            }
+
+        /* the div which contains sign in register and close buttons */
+            .boxform-buttons{
+                width:100%;
+                overflow:hidden;
+            }
+            
+        /* the buttons  */
+            .form-button-left,.form-button-right{
+                float:left;
+                font-size:20px;
+                font-weight:bold;
+                padding:10px;
+                margin:10px;
+                color:white;
+                background-color: #111;
+                border:2px solid white;
+            }
+
+            
+            .form-button-right{
+                float:right;
+            }
+
+            .form-button-left:hover,.form-button-right:hover{
+                cursor:pointer;
+            }
+
+        /* when the buttons are clicked */
+            #SigninButton.buttonselected,#RegisterButton.buttonselected{
+                background-color:white;
+                color:black;
+            }
+
+
+        /* Register form and Sign in form*/
+            #registerform,#signinform{
+                font-size: 25px;
+                font-weight:bold;
+            }
+
+
+        /* heading in boxes*/
+            .boxdeclare{
+                margin-top:10px;
+                font-size:30px;
+                margin-bottom:30px;
+            }
+        
+        
+
+        /* input in the forms */
+            .secondinput{
+                font-size: 25px;
+            }
+
+
+        /* submit in the forms */
+            .secondsubmit{
+                margin-top: 20px;
+                font-size: 25px;
+                color:white;
+                background-color:black;
+                border:2px solid white;
+                padding:10px;   
+            }
+            
+            .secondsubmit:hover{
+                color:black;
+                background-color:white;
+                border:2px solid white;
+                cursor: pointer;
+            }
+
+
+    /* header.php ends here */
+
+
+    /* index.php starts here */
+
+
+        /* slider container*/
+        .container
+        {
+            z-index:0;
+            position:relative;
+            width:100%;
+            overflow:hidden;
+        }
+
+
+        /* image visible in slider */
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .slide{
+            z-index:0;
+            width:100%;
+            animation: fadeInAnimation ease-in 0.375s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-duration: 1.5s;
+        }
+
+        
+
+
+        /* before and after buttons in slider */
+        .before,.after{
+            z-index:0;
+            top:50%;
+            position:absolute;
+            height:60px;
+            border:none;
+            width:40px;
+            opacity:0.9;
+            background-color:transparent;
+            font-weight: bold;
+            font-size: 25px;
+            color:white;
+            cursor:pointer;
+            transition-duration: 0.5s;
+            z-index:2;
+        }
+
+        .after{
+            right:0;
+        }
+        
+        .before:hover,.after:hover{
+            background-color:white;
+            opacity:0.5;
+            color:black;
+        }
+
+
+
+        
+
+    /* index.php ends here */
+
+
+
+
+
+    /*
+    below code not responsive 
+*/
+
+input{
+    background-color:transparent;
+    color:white;
+    border:none;
+    border-bottom:2px solid white;
+    outline: none;
+    cursor:text;
+    padding-bottom:5px;
+    box-sizing: border-box;
 }
+input[type=radio]{
+    cursor:pointer;
+}
+
+
 .pic
 {
     margin-top:10px;
-    width: 1503px;
-    height:100%;
+    width: 100%;
 }
-.top
-{
-    margin:-8px;
-    height:65px;
-    width:1519px;;
-    background-color: #111;
-}
-.title
-{
 
-    border-radius:15px;
-    width:1503px;
-    height:50px;
-    float:left;
-}
-.kumar{
-    width:500px;
-    height:40px;
-    margin-left:600px;
-    color:white;
-    font-size:30px;
-    padding-top:10px;
-    float:left;
-    margin-right:150px;
-}
-.titleopt
-{
 
-    width:75px;
-    height:35px;
-    color:white;
-    float:left;
-    font-size:20px;
-    margin:10px;
-    padding-left:15px;
-    padding-top:10px;
-    border-radius:20px;
-    background-color: #333;
-   margin-left:20px;
 
-}
-.titleopt:hover{
-    background-color:#111;
-}
-.search input{
-    
-    width:650px;
-    height:20px;
-    border-radius:15px;
-}
-ul {
-    list-style-type: none;
-    margin-top: 8px;
-    margin-left:-8px;
-    width:1519px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-      color:white;
-      font-weight:bold;
-      height:30px;
-      width:75px;
-      font-size:24px;
-      float: left;
-      padding:20px;
-  }
-  li:hover {
-    background-color: #111;
-    color:white;
-  }
-input{
-    height:25px;
-    width:281px;
-    margin-left:850px;
-    margin-top:15px;
-    border-radius:20px;
-}
+
 .subtitle
 {
     margin-left:5px;
@@ -104,82 +316,50 @@ input{
     padding-top:10px;
     border-radius:inherit;
 }
-.conatiner
-{
-    margin:-8px;
-    width:1511px;
-    height:800px;
-    background-color:#666;
-}
-.change
-{
-    float:left;
-}
-.before{
-    margin-top:300px;
-    height:50px;
-    width:50px;
-    border-radius:25px;
-    margin-left:90px;
-    opacity:0.9;
-    background-color:black;
-    color:white;
-}
 
-.slide
-{
-    height:650px;
-    width:1300px;
-    margin-left:-50px;
-    margin-right:-50px;
-}
 
 .invisible
 {
     display:none;
 }
 
-.after{
-    margin-top:300px;
-    height:50px;
-    width:50px;
-    border-radius:25px;
-    opacity:0.9;
-    background-color: black;
-    color:white;
-}
+
 .box
 {
-    
-    margin-left:80px;
+    width:90%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-left:5%;
+    box-sizing: border-box;
     float:left;
+    grid-gap:20px;
+    z-index:0;
 }
-.box div{
 
-
-    width:max-content;
-}
 .box div img
 {
-    height:500px;
-    width:400px;
-    margin:20px;
+    width:100%;
 }
 
 .poster
 {
+    z-index:0;
+    border:2px solid white;
+    border-radius: 20px;;
     margin-top:50px;
-    height:550px;
-    width:450px;
+    padding:20px;
+    box-sizing: border-box;
     float:left;
 
 }
 .moviepic{
+    z-index:0;
     display:block;
 }
+
 .moviename
 {
-
+    z-index:0;
     color:white;
     text-decoration:none;
     font-weight:bold;
@@ -192,26 +372,27 @@ a:link{
     text-decoration: none;
 }
 .rights{
-    width:1471px;
+    margin-top:20px;
+    position:relative;
+    width:100%;
     color:white;
     font-size:15px;
-    margin-top:50px;
+    display:grid;
     float:left;
-    padding-left:40px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    bottom:0px;
     border-top: 2px solid white;
-    height:30px;
+    box-sizing: border-box;
 }
 .secondposter{
-    width:30%;
-    align-content: center;
-    margin:auto;
+    width:100%;
 }
 .secondimage
 {
-    margin:auto;
-    align-self:center;
-    height:550px;
-    width:450px;
+    margin-left:35%;
+    width:30%;
+
 }
 .secondmoviename{
     text-align:center;
@@ -223,12 +404,29 @@ a:link{
 
 .entry
 {
+    margin-top:50px;
     color:white;
-    margin-left:300px;
+    margin-left:15%;
     font-size:25px;
-    border:10px solid white;
-    width:800px;
-    padding:30px;
+    border:7px solid white;
+    width:70%;
+    padding:10px;
+    padding-top:30px;
+    box-sizing: border-box;
+    text-align:center;
+    border-radius: 20px;
+}
+.entry .secondsubmit
+{
+    margin-left:0px;
+    width:70%;
+    max-width:300px;
+}
+.entry form{
+    margin-left:0px;
+}
+.entry .declare{
+    margin-left:0px;
 }
 .declare{
     margin-left:200px;
@@ -236,31 +434,13 @@ a:link{
     font-weight:bold;
     font-size: 40px;;
 }
-.secondinput{
-    margin-left:0px;
-    width:300px;
-    border-radius:0px;
-    height:20px;
-}
+
 .secondradio{
     width:20px;
     height:20px;
     margin-left:0px;
 }
-.secondsubmit{
-    margin-left:100px;
-    width:150px;
-    height:40px;
-    font-size:30px;
-    color:black;
-    border-radius:20px;
-    margin-top:30px;
-}
-form{
-    color:white;
-    margin-top:20px;
-    margin-left:200px;
-}
+
 .incorrect{
     font-size:20px;
     text-transform: capitalize;
@@ -272,10 +452,7 @@ form{
     font-size:20px;
     float:right;
 }
-.navlink:visited{
-    color:white;
-    
-}
+
 .secondconfirm{
     height:50px;
     font-size:30px;
@@ -290,11 +467,11 @@ form{
 }
 .confirmation{
     margin-top:40px;
-    margin-left:0px;
+    margin-left:19%;
     padding-top:20px;
-    padding-left:500px;
-    height:300px;
-    width:991px;
+    height:400px;
+    width: 900px;
+    text-align:center;
     color:white;
     font-size:35px;
     border:10px solid white;
@@ -310,13 +487,14 @@ form{
 
 }
 .result{
-    margin-left:-8px;
+    overflow:hidden;
+    box-sizing: border-box;
+    padding:10px;
+    margin-bottom:10px;
     background-color:#333;
     font-size:30px;
     color:white;
-    height:50px;
-    width:1518px;
-    margin-bottom:15px;
+    width:100%;
 
 }
 .resultin{
@@ -324,3 +502,131 @@ form{
     color:white;
     margin-right:100px;
 }
+#registerbig{
+    display:none;
+    height:1600px;
+    position:fixed;
+}
+
+
+
+
+
+
+
+
+.movieaddform{
+    height:300px;
+    width:1000px;
+    border:5px solid white;
+    display:none;
+    margin-left:290px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:25px;
+    margin-top:10px;
+}
+
+.download
+{
+    height:36px;
+    width:170px;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    margin-top:20px;
+    text-align:center;
+    padding-top:10px;
+    margin-left:45%;
+    align-self:center;
+    border:2px solid white;
+    background-color:black;
+    border-radius:20px;
+}
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .box{
+        grid-template-columns: auto auto;
+    }
+  }
+
+
+@media only screen and (max-width: 800px) {
+    .top{
+        background-color: #333;
+        poistion:sticky;
+    }
+    .box{
+        z-index:0;
+        grid-template-columns: auto auto;
+    }
+
+    #options-icon{
+        display:block;
+        color:white; 
+        font-size:35px;
+        float:left;
+        position:absolute;
+        right:10px;
+        top:10px;
+        cursor:pointer;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    #navbar-phone{
+        width:100%;
+        background-color: #333;
+        z-index:20;
+        box-sizing: border-box;
+    }
+    .navbaritem-phone,.titleopt-phone{
+        width:100%;
+        text-align: center;
+        font-size: 25px;
+        color:white;
+        padding-top: 15px;
+        padding-bottom:15px;
+        cursor:pointer;
+    }
+    .navbaritem-phone:hover,.titleopt-phone:hover{
+        background-color: #111;
+    }
+
+    #boxform{
+        width:90%;
+        margin-left:5%;
+        background-color:black;
+        color:white;
+        opacity:100%;
+        z-index:10;
+        font-size:15px;
+        border-radius:10px;
+        border:solid white 5px;
+        padding:15px;
+        padding-bottom:20px;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top:10vh;
+
+        -ms-transform:none;
+        transform: none;
+        
+    }
+
+    .secondimage
+    {
+        margin-left:15%;
+        width:70%;
+    }
+
+    .rights{
+        font-size: 12px;
+    }
+
+  }

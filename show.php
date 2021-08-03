@@ -4,7 +4,7 @@
 <head>
     <title>Movie</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/2b01f68407.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,32 +33,9 @@
 
     <div class="secondbody">
     <div class="bodyin">
-        <div class="top">
-
-            <div class="title">
-
-                <div class="kumar">
-                    KUMAR'S KINGDOM
-                </div>
-                
-                <div class="titleopt">
-                    Sign In
-                </div>
-                
-                <div class="titleopt">
-                    Register
-                </div>
-                
-            </div>
-
-        </div>
-        <ul>
-            <li><a class="navlink" href="index.php">Home</a></li>
-            <li><a class="navlink" href="news.html"> News</a></li>
-            <li><a class="navlink" href="about.html"> About</a></li>
-            <input type="text" placeholder="search">
-        </ul>
-    </div>
+    <?php
+                 include 'header.php';
+            ?>
     <div style="color:white">
         <div class="secondmoviename"><?=$movies[$key]["name"]?></div>
             <div class="secondposter"><img class="secondimage" src=<?="assets/". $movies[$key]["imageUrl"]?>></div>
@@ -66,20 +43,23 @@
 
     <div class="entry">
         <div class="declare">Please Enter Your Details</div>
+        <br/><br/>
         
         
         <?php $fnameerr=$lnameerr=$emailerr=$gendererr="";?>
 
 
         <form  action="reserved.php" method="post">
-            FirstName:<input class="secondinput" required type="text" name="fname">*<div id="fnameerr"></div><br>
-            LastName:<input class="secondinput" required type="text" name="lname">*<div id="lnameerr"></div><br>
-            Email:<input class="secondinput" required type="email" name="email">*<div id="emailerr"></div><br><br>
-            Choose your gender:*<div id="gendererr"></div><br><br>
-            <input class="secondradio" required type="radio" name="gender" value="male">:Male &emsp;
-            <input class="secondradio" required type="radio" name="gender" value="female">:Female  &emsp;
-            <input class="secondradio" required type="radio" name="gender" value="other">:Other<br>
+            *FirstName: &emsp; <input class="secondinput" required type="text" name="fname"><div id="fnameerr"></div><br>
+            *LastName: &emsp; <input class="secondinput" required type="text" name="lname"><div id="lnameerr"></div><br>
+            *Email: &emsp;&emsp;&emsp; <input class="secondinput" required type="email" name="email"><div id="emailerr"></div><br><br>
+            *Choose your timings:<div id="gendererr"></div><br>
+            <input class="secondradio" required type="radio" name="timing" value="10:00 am">10:00 am &emsp;
+            <input class="secondradio" required type="radio" name="timing" value="4:00 pm">4:00 am  &emsp;
+            <input class="secondradio" required type="radio" name="timing" value="7:00 pm">7:00 pm<br>
             <input  type="hidden" name="movie" value=<?=$key?>>
+            <input type="hidden" name="moviename" value =<?=$movies[$key]["name"]?>>
+            <input type="hidden" name="TicketId" value =<?= rand()?>>            
             <input class="secondsubmit" type="submit">
 
         </form>
@@ -87,6 +67,6 @@
 
 
     </div>
-
+    <?php include 'footer.php';?>
 </body>
 </html>

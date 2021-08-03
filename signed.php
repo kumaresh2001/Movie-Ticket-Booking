@@ -51,6 +51,7 @@
     $id=$_POST["id"];
       $password = $_POST["password"];
       $tablepassword =$list[0]["password"];
+      $admin = $list[0]["admin"];
       $password = crypt($password,"beebo");
       
        if($list!=NULL)
@@ -62,8 +63,17 @@
             $_SESSION["name"]=$list[0]['user'];
             unset($_SESSION["incorrect"]);
             echo "password is correct";
-            header("Location:index.php");
-            exit();
+            $_SESSION["logstatus"] =1;
+            if($admin)
+            {
+                header("Location:admin.php");
+                exit();
+            }
+            else
+            {
+                header("Location:index.php");
+                exit();    
+            }
            
            }
            else{
@@ -102,9 +112,7 @@
                 
             
         </div>    
-    <div class="rights">
-        <footer>KUMAR'SKINGDOM &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;@all rights reserved &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;engalukku veru engum kilaigal illai</footer>    
-    </div>
+        <?php include 'footer.php';?>
         
 
     <script>
