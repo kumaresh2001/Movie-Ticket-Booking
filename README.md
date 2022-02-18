@@ -29,24 +29,37 @@ This application is a local project that can be hosted by installing a local ser
 ### Home Page
 ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/home-page.png?raw=true)
  
+ <hr>
  
  ### Login / Register
  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/login-box.png?raw=true)
- The Login/Register box is used to login as a customer or an admin. The login is verified by hashing the password using **crypt** function available in PHP to match with the hashed password in the database
- The login is identified as admin or customer as the admin are marked in the database which will be discussed later.
+ 
+ <hr>
  
  ### Movie Booking
  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/book-ticket.png?raw=true)
+ 
+ <hr>
+ 
  ### Booking Confirmed
  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/booking-confirmed.png?raw=true)
+ 
+ <hr>
+ 
  ### Ticket
   ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/ticket-pdf.png?raw=true)
+ 
+ <hr>
+ 
  ### Add Movie
   ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/add-movie.png?raw=true)
+ 
+ <hr>
+ 
  ### Edit Movie
   ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/edit-movie.png?raw=true)
 
-
+<hr>
 
 
 
