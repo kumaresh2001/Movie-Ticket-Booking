@@ -28,7 +28,7 @@ This application is a local project that can be hosted by installing a local ser
 
 ### Home Page
 ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/home-page.png?raw=true)
- The home page consists of title of the project, a navbar and a carousel which changes image automatically every 4 seconds.The carousel is constructed using pure CSS and     javascript. The home page also has a list of movies where the viewer can book a ticket.The list of movies are displayed using CSS Grid.
+ 
  
  ### Login / Register
  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/login-box.png?raw=true)
