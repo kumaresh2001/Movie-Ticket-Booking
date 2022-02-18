@@ -1,9 +1,13 @@
 # Movie-Ticket-Booking
 
-The **Movie Ticket Booking System** is a local web application which can be used to 
- - book tickets for a selected movie
- - download a movie ticket after booking a movie
- - Add / Edit / Delete an existing movie by the admin
+The **Movie Ticket Booking System** is a local web application which is a model for a web application designed for booking tickets in a cinema theatre online
+
+The application is designed for
+ - A customer to login and view available movies
+ - A customer to book tickets
+ - Download the ticket as a pdf after booking a movie
+ - The admin of the application to login 
+ - The admin of the application to add/edit/delete movies
 
 # Contents
 
@@ -24,19 +28,38 @@ This application is a local project that can be hosted by installing a local ser
 
 ### Home Page
 ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/home-page.png?raw=true)
- The home page consists of title of the project, a navbar and a carousel which changes image automatically every 4 seconds.The carousel is constructed using pure CSS and javascript
+ The home page consists of title of the project, a navbar and a carousel which changes image automatically every 4 seconds.The carousel is constructed using pure CSS and     javascript. The home page also has a list of movies where the viewer can book a ticket.The list of movies are displayed using CSS Grid.
  
- The home page also has a list of movies where the viewer can book a ticket.
- The list of movies are displayed using CSS Grid
+ ### Login / Register
+ ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/login-box.png?raw=true)
+ The Login/Register box is used to login as a customer or an admin. The login is verified by hashing the password using **crypt** function available in PHP to match with the hashed password in the database
+ The login is identified as admin or customer as the admin are marked in the database which will be discussed later.
+ 
+ ### Movie Booking
+ ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/book-ticket.png?raw=true)
+ ### Booking Confirmed
+ ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/booking-confirmed.png?raw=true)
+ ### Ticket
+  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/ticket-pdf.png?raw=true)
+ ### Add Movie
+  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/add-movie.png?raw=true)
+ ### Edit Movie
+  ![alt text](https://github.com/kumaresh2001/Movie-Ticket-Booking/blob/master/scrnshots/edit-movie.png?raw=true)
 
-###
+
+
+
+
+
+
+### 3. Database
 <a name="db"></a>
 ## 1. Database
 
 sometext
 
 <a name="ticket"></a>
-## 1. Ticket Download
+## 4. Ticket Download
 
 sometext
 
