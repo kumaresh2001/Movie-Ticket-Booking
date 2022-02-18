@@ -4,11 +4,16 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/2b01f68407.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
     <?php
+
+        session_start();
+
+
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -26,6 +31,21 @@
             $movies[] = $row;
         }
         $conn->close();
+    ?>
+
+    <?php
+        //if user not logged in we have to intimate user to log in
+        if(isset($_GET["notLoggedIn"]))
+        {
+            if($_GET["notLoggedIn"]==1)
+            {
+                echo "<script>
+                        alert(\"Kindly log in before reserving ticket\");
+                        window.location.href = \"index.php\";
+                    </script>";
+            }
+        }
+    
     ?>
 
 

@@ -1,4 +1,3 @@
-<?php session_start();?>
       <?php 
             $id="Sign In";
             if(isset($_SESSION["logstatus"]))//when site is opened for first time
@@ -45,7 +44,7 @@
         -->
             <div class="navbar">
             
-                <div class="navbaritem"> <a class="navlink" href="index.php"> Home  </a> </div>
+                <div class="navbaritem"> <a class="navlink" id="home-link" href="index.php"> Home  </a> </div>
                 <div class="navbaritem"> <a class="navlink" href="news.php">  News  </a> </div>
                 <div class="navbaritem"> <a class="navlink" href="about.php"> About </a> </div>
 

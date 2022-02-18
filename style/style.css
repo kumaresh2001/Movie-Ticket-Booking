@@ -40,8 +40,7 @@
                 text-align: center;
                 font-size: 35px;
                 color:white;
-                margin-bottom:10px;
-                float:left;
+
             }
 
             /* options icon hidden in desktop resolution */ 
@@ -52,8 +51,6 @@
         /* the navbar where home,about,contact links are present */
             .navbar{
                 width:100%;
-                margin-bottom:5px;
-                position:sticky;
                 z-index:10;
                 top:0px;
                 background-color: #333;
@@ -326,10 +323,11 @@ input[type=radio]{
 
 .box
 {
-    width:90%;
+    width:100%;
     display:grid;
-    grid-template-columns: auto auto auto;
-    margin-left:5%;
+    grid-template-columns: auto auto auto auto;
+    justify-content:space-around;
+    padding:15px;
     box-sizing: border-box;
     float:left;
     grid-gap:20px;
@@ -355,6 +353,7 @@ input[type=radio]{
 .moviepic{
     z-index:0;
     display:block;
+    height:max-content;
 }
 
 .moviename
@@ -467,10 +466,10 @@ a:link{
 }
 .confirmation{
     margin-top:40px;
-    margin-left:19%;
+    margin-left:15%;
     padding-top:20px;
-    height:400px;
-    width: 900px;
+    width: 70%;
+    padding-bottom:20px;
     text-align:center;
     color:white;
     font-size:35px;
@@ -515,35 +514,29 @@ a:link{
 
 
 
-.movieaddform{
-    height:300px;
-    width:1000px;
-    border:5px solid white;
-    display:none;
-    margin-left:290px;
-    border-radius:10px;
-    text-align:center;
-    margin-bottom:25px;
-    margin-top:10px;
-}
+
 
 .download
 {
-    height:36px;
-    width:170px;
+    width:25%;
     color:white;
     font-weight:bold;
     font-size:20px;
     margin-top:20px;
     text-align:center;
-    padding-top:10px;
-    margin-left:45%;
+    padding:10px;
+    box-sizing:border-box;
+    margin-left:37.5%;
     align-self:center;
     border:2px solid white;
     background-color:black;
     border-radius:20px;
 }
 
+.download:hover{
+    background-color: white;
+    color:#111;
+}
 
 
 
@@ -557,7 +550,8 @@ a:link{
 @media only screen and (max-width: 800px) {
     .top{
         background-color: #333;
-        poistion:sticky;
+        font-size:25px;
+        padding-top:0px;
     }
     .box{
         z-index:0;
@@ -567,11 +561,11 @@ a:link{
     #options-icon{
         display:block;
         color:white; 
-        font-size:35px;
+        font-size:25px;
         float:left;
         position:absolute;
-        right:10px;
-        top:10px;
+        right:5px;
+        top:2.5px;
         cursor:pointer;
     }
 
@@ -584,6 +578,7 @@ a:link{
         background-color: #333;
         z-index:20;
         box-sizing: border-box;
+        margin-bottom:15px;
     }
     .navbaritem-phone,.titleopt-phone{
         width:100%;

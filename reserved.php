@@ -1,8 +1,15 @@
+<?php
+    session_start();
+    
+?>
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Movie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
@@ -43,6 +50,8 @@
     <div class="bodyin">
         <?php
                  include 'header.php';
+                 //if user not signed in take him to SignIn page
+                
             ?>
         <div class="secondconfirm">!!!YOUR BOOKING IS CONFIRMED!!!</div>
         <div class="secondmoviename"><?=$movies[$key]["name"]?></div>

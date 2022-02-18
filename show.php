@@ -3,6 +3,7 @@
 
 <head>
     <title>Movie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script src="https://kit.fontawesome.com/2b01f68407.js" crossorigin="anonymous"></script>
 </head>
@@ -10,6 +11,15 @@
 <body>
 
     <?php
+
+        session_start();
+
+        if($_SESSION["logstatus"]!=1)
+        {
+           header("Location:index.php?notLoggedIn=1");
+        }
+
+
         $servername = "localhost";
         $username = "root";
         $password = "";

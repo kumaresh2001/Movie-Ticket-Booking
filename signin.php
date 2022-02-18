@@ -1,17 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sign in</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        </head>
-    <body>
-
-    
-
-    <div class="bodyin">
-            <?php
-                 include 'header.php';
+<?php
+                session_start();
                  $incorrect="";
                  if(isset($_SESSION["logstatus"]))
                  {
@@ -19,9 +7,24 @@
                     {
                         $_SESSION["logstatus"]=0;
                         header("Location:index.php");
-                        exit();
                     }   
                  }
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        </head>
+    <body>
+
+    
+
+    <div class="bodyin">
+            <?php;
+                 include 'header.php';
             ?>
 
             <div class="declare">Enter Your Id</div>
