@@ -102,15 +102,16 @@ The SQL database for this application consists of 3 Tables.
 ## 4. Ticket Download
   After booking a show, the customer can download the ticket by clicking the **Download Ticket** button.
   This is facilitated by using a library called [Mpdf].
-  This library is added into the project repository. The message to be written inside the file can be stored inside a variable and a file pointer is created by importing the library 
-  Example : **$mpdf = new \Mpdf\Mpdf();**
+  This library is added into the project repository. The message to be written inside the file can be stored inside a variable and a file pointer is created by importing the library.  
   
-  Then a method called WriteHMTL is used to write the message inside the file
-  Example : **$mpdf->WriteHTML($message);**
-  
-  After that the file is downloaded on the customers device as a pdf by choosing the download option in the output method
-  Example : **$mpdf->Output('ticket.pdf','D');**
-  
+  Example : **$mpdf = new \Mpdf\Mpdf();**  
+    
+  Then a method called WriteHMTL is used to write the message inside the file.  
+  Example : **$mpdf->WriteHTML($message);**  
+    
+  After that the file is downloaded on the customers device as a pdf by choosing the download option in the output method.  
+  Example : **$mpdf->Output('ticket.pdf','D');**    
+    
   After downloading the ticket,it can be viewed by the customer in their device
 
  
